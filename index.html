@@ -2,111 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet/less" type="text/css" href="css/Main.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
-    <title>Resume</title>
+    <title>Davey van den Eijnde | Game Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/Index.css">
 </head>
-<video src="/Image/Background.mp4" autoplay loop playsinline muted></video>
-<header class="viewport-header">
-    <h1>Curriculum Vitae</h1>
-</header>
-<main>
-    <div class="container">
-        <div>
-            <h1>about me</h1>
-            <div class="text-center mt-5 mb-5">
-                <p>Davey van den Eijnde</p>
-                <p>Student at Fontys ICT Software Development, Eindhoven</p>
-                <p>Email: <a href="mailto:davey2206@live.nl">davey2206@live.nl</a></p>
-                <p>Phone: <a href="tel:06-23941171">06-23941171</a></p>
-                <p>Languages: English (Fluent), Dutch (Native)</p>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Davey van den Eijnde</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Game Developer & <span>Game Designer</span></h1>
+                    <p>I create fun gaming experiences with creative gameplay mechanics. Specializing in Unity and also Virtual Reality.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-accent">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="dev-image">
+                        <img src="/images/Me.jpg" alt="Dev">
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Objective</h1>
-            <p class="mt-5 mb-5">
-                Motivated and dedicated student pursuing a degree in Software Development at Fontys ICT in Eindhoven. Passionate about gaming and making games, with a strong foundation in programming languages including C#, PHP, HTML, JavaScript, CSS, and SQL. Seeking opportunities to apply my skills and knowledge in a challenging and innovative environment.
-            </p>
-        </div>
-        <div>
-            <h1>Education</h1>
-            <div class="mt-5 mb-5">
-                <p>
-                    <ul>
-                        <li>Bachelor of Science in Software Engineering with an focus on Game Design and Technology, Fontys ICT, Eindhoven (Expected Graduation: 2025)</li>
-                        <li>Minor in XR development, Fontys ICT, Eindhoven (Expected Graduation: 2025)</li>
-                        <li>Secondary vocational education in Application and media developer, Summa College, Eindhoven, Graduation: 2020</li>
-                        <li>Pre-secondary vocational education in electrical engineering, Het Commanderij College, Gemert, Graduation: 2017</li>
-                    </ul>
-                </p>
-                <p class="mt-5">
-                    Relevant coursework: Object-Oriented Programming, Web Development, Database Management, Software Engineering, Game design, Game technology
-                </p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>Explore my latest game development projects and interactive experiences</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background: url(/images/Cube.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cube Survivor</h3>
+                        <p>A fast-paced roguelite where you wield your mouse and unique abilities to defend your core against waves of enemies</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">3D</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://store.steampowered.com/app/2664970/Cube_Survivor"><i class="fas fa-external-link-alt"></i> Steam Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background: url(/images/Secrets.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Secrets of Ignacios</h3>
+                        <p>An VR experience that allows users cast spells using hand signs</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">VR</span>
+                            <span class="tag">Hand Tracking</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://rogue-ape-studios-xr.itch.io/secrets-of-ignacios"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Rogue-Ape-Studios-XR/Secrets-of-Ignacios"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background: url(/images/Crusadeon.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Crusadeon</h3>
+                        <p>A fast-paced roguelike where you battle waves of vikings on your crusade to kill there gods</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">3D</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://rogueapestudio.itch.io/crusadeon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Rogue-Ape-Studios/Crusader"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background: url(/images/billy.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Billy's Escape</h3>
+                        <p>Puzzle platformer where you travel to the past and present to solve the puzzles</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">2D</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://davopia.itch.io/billys-escape"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/davey2206/Project-T"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background: url(/images/WallBreaker.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>WallBreaker</h3>
+                        <p>A endless shooter where you shoot points on a wall to break it</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">2D</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://davopia.itch.io/wallbreaker"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background: linear-gradient(45deg, #00c853, #64dd17);">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Health System</h3>
+                        <p>A Simple health system unity package</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/davey2206/HealthSystem"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Skills</h1>
-            <div class="mt-5 mb-5">
-                <p>
-                    <ul>
-                        <li>Proficient in C#, PHP, HTML, JavaScript, CSS, and SQL</li>
-                        <li>Proficient with game development frameworks and engines such as Unity</li>
-                        <li>Strong problem-solving and analytical skills</li>
-                        <li>Ability to work both independently and collaboratively in a team-oriented environment</li>
-                        <li>Detail-oriented and committed to delivering high-quality results.</li>
-                    </ul>
-                </p>
+    </section>
+    <!-- Education Section -->
+    <section id="education" style="background: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education & Certifications</h2>
+                <p>My academic background and professional development journey</p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in ICT</h3>
+                        <span class="date">2021 - 2025</span>
+                        <p>Fontys University, Eindhoven</p>
+                        <p>Specialized in Game Design and technology with a focus on Gameplay Mechanics Programming and Game Design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Minor in XR Development</h3>
+                        <span class="date">2024</span>
+                        <p>Fontys University, Eindhoven</p>
+                        <p>Advanced Minor in developming VR/AR technologies</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Secondary Vocational Education in Application and Media Development</h3>
+                        <span class="date">2017 - 2020</span>
+                        <p>Epic Games Training Program</p>
+                        <p>Advanced Secondary Vocational Education (MBO Level 4) Diploma in ICT. Specialized in Laravel and .NET</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Experience</h1>
-            <div class="mt-5 mb-5">
-                <p>Game Development Projects</p>
-                <p>
-                    <ul>
-                        <li>Developed various games as part of personal and school projects, focusing on gameplay mechanics, game design, game aesthetics</li>
-                        <li>Utilized C#, Unity, and other game development tools to create engaging and interactive gaming experiences.</li>
-                        <li>Collaborated with a team of developers, artists, and designers to ensure successful project completion.</li>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <p>My expertise in game development technologies and tools</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Game Engines</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Unity (C#)</li>
+                        <li><i class="fas fa-check-circle"></i> Unreal Engine (blueprints)</li>
                     </ul>
-                </p>
-                <p>Software Engineering</p>
-                <p>
-                    <ul>
-                        <li>Developed various products for school and stakeholders, focusing on backend development and front-end development.</li>
-                        <li>Utilized C#, html, JavaScript, CSS, PHP, Node.js, ASP.net, and other frameworks / Languages to create interactive websites and tools.</li>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> C#</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                        <li><i class="fas fa-check-circle"></i> VueJS</li>
+                        <li><i class="fas fa-check-circle"></i> Python</li>
+                        <li><i class="fas fa-check-circle"></i> SQL</li>
+                        <li><i class="fas fa-check-circle"></i> PHP</li>
                     </ul>
-                </p>
-
-                <p>Internships</p>
-                <p>
-                    <ul>
-                        <li>6 months of Web Development Internship at PWRDBYPIM, Eindhoven.</li>
-                        <li>6 months of Web Development Internship at WEAP - IT Innovations, Gemert.</li>
-                        <li>6 months of Game Development Internship at Fontys Innovation Lab, Eindhoven.</li>
+                </div>
+                <div class="skill-category">
+                    <h3>Specializations</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Gameplay Mechanics Programming</li>
+                        <li><i class="fas fa-check-circle"></i> VR/AR Development</li>
                     </ul>
-                </p>
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Projects</h1>
-            <div class="mt-5 mb-5 text-center">
-                <iframe frameborder="0" src="https://itch.io/embed/2271722?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/cube-survivor">Cube Survivor by Davopia Games</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/2609935?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://rogueapestudio.itch.io/crusadeon">Crusadeon by Rogue Ape Studio</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/2252139?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/wallbreaker-mobile">WallBreaker Mobile by Davopia</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/2012270?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/billys-escape">Billy’s escape by Davopia Games</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/1961874?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/dreamer-steve">Dreamer Steve by Davopia Games</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/1970946?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/square-sprint">Square Sprint by Davopia Games</a></iframe><br>
-                <iframe frameborder="0" src="https://itch.io/embed/1838469?bg_color=000000&amp;fg_color=ffffff&amp;border_color=4e4e4e" width="750" height="167"><a href="https://davopia.itch.io/wallbreaker">WallBreaker by Davopia Games</a></iframe>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" style="background: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's create something amazing together!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:davey2206@live.nl">davey2206@live.nl</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Gemert, North Brabant, Nederlands</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+0623941171">+06-23941171</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/davey-van-den-eijnde-b078a014b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/davey2206"><i class="fab fa-github"></i></a>
+                        <a href="https://davopia.itch.io/"><i class="fab fa-itch-io"></i></a>
+                        <a href="https://store.steampowered.com/curator/44714993-Davopia-Games/"><i class="fa-brands fa-steam"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Hobbies</h1>
-            <p>Gaming: Enthusiastic gamer with a deep appreciation for various game genres, which fuels my passion for game development.</p>
-            <p>Making Games: Actively involved in designing and developing games, exploring new concepts, and pushing the boundaries of interactive experiences.</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Davey van den Eijnde</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Davey van den Eijnde. All rights reserved.
+                </div>
+            </div>
         </div>
-    </div>
-</main>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        // Simple animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        // Observe project cards and other elements
+        document.querySelectorAll('.project-card, .skill-category, .timeline-item').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
