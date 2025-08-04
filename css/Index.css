@@ -458,7 +458,7 @@ footer {
     font-size: 0.9rem;
 }
 /* Responsive Design */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .hero h1 {
         font-size: 2.8rem;
     }
@@ -474,8 +474,11 @@ footer {
     .nav-links {
         display: none;
     }
+    .hero-text {
+        padding-top: 125px;
+    }
     .hero h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .section-title h2 {
         font-size: 2rem;
